@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {SignUp_Page, AdminPanel, LoginPage} from './components'
-import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate  } from 'react-router-dom';
 import store from './redux/store';
 import { Provider } from 'react-redux';
 
@@ -14,6 +14,7 @@ root.render(
         <Route path='/login' element={<LoginPage/>} />
         <Route path='/Admin' element={<AdminPanel/>} />
         <Route path='/SignUp' element={<SignUp_Page/>} />
+        <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </Router>
   </Provider>

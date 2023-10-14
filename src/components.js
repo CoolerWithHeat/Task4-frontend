@@ -110,7 +110,7 @@ export function AdminPanel(){
             <div id="container">
             <div className="shell">
 
-                <div className="small-nav"> <a href="#">Admin Dashboard</a></div>
+                <div className="small-nav"> <a href="../SignUp">Sign Up page</a></div>
 
                     {message ? message : null}
            
